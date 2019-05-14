@@ -40,9 +40,12 @@ public class IdkTest {
         Document user2 = new Document();
         Document user3 = new Document();
 
-        user1.append("name","test1").append("surname","test1").append("pid","0002034560");
-        user2.append("name","test2").append("surname","test2").append("pid","9411265908");
-        user3.append("name","test3").append("surname","test3").append("pid","9906221105");
+        //14.5.2019
+        user1.append("name","test1").append("surname","test1").append("pid","1905140017");
+        //6.8.2019
+        user2.append("name","test2").append("surname","test2").append("pid","1908060011");
+        //2.9.2019
+        user3.append("name","test3").append("surname","test3").append("pid","1909020014");
 
         col.insertOne(user1);
         col.insertOne(user2);

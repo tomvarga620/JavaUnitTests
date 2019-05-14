@@ -54,17 +54,21 @@ public class Idk {
                 org.bson.Document doc = cur.next();
 
                 List listPid = new ArrayList(doc.values());
-                System.out.print(listDob.get(1));
+                System.out.print(listPid.get(1));
                 System.out.print(": ");
-                System.out.println(listDob.get(2));
+                System.out.println(listPid.get(2));
                 System.out.print(": ");
-                System.out.println(listDob.get(3));
+                System.out.println(listPid.get(3));
+
+                String day = listPid.get(3).toString().substring(4,6);
+                System.out.println("day= "+day);
+                String month = listPid.get(3).toString().substring(2,4);
+                System.out.println("month= "+month);
+                String year;
 
             }
         }
-
         mongoClient.close();
-
     }
 
 }
